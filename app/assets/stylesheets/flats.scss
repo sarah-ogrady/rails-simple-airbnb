@@ -1,0 +1,87 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+    margin: 0;
+}
+
+.navbar {
+  height: 40px;
+  width: 100%;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Red Rose', cursive;
+}
+
+.nav-title {
+  padding: 8px 16px;
+  margin: 0;
+}
+
+.nav-btns {
+  padding: 8px 16px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  font-family: 'Red Rose', cursive;
+}
+
+.cards {
+  display: flex;
+}
+.card {
+  width: 300px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  height: 400px;
+  margin: 20px;
+
+}
+
+.flat-info {
+  padding: 10px;
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #ACACAC;
+  height: 140px;
+}
+
+.flat-pic {
+  width: 100%;
+}
+
+.flat-price-people {
+  display: flex;
+}
+
+.lil-margin {
+  margin: 5px;
+}
+
+.more-margin {
+  margin-left: 30px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.crud-actions {
+
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
