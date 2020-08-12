@@ -5,6 +5,14 @@ body {
     margin: 0;
 }
 
+.container {
+  font-family: 'Red Rose', cursive;
+  display: flex;
+  flex-grow: ;
+  margin: 0 auto;
+  width: 900px;
+}
+
 .navbar {
   height: 40px;
   width: 100%;
@@ -31,31 +39,25 @@ body {
   padding: 3px;
   border: 1px solid black;
   border-radius: 8px;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-.container {
-  width: 900px;
-  margin: 0 auto;
-  font-family: 'Red Rose', cursive;
+
+.big-card {
+  width: 200px;
 }
 
-.cards {
-  display: flex;
-}
 .card {
-  width: 300px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
   border-radius: 2px;
-  height: 400px;
-  margin: 20px;
-
 }
 
 .flat-info {
   padding: 10px;
   background-color: #F2F2F2;
   border-bottom: 1px solid #ACACAC;
-  height: 140px;
 }
 
 .flat-pic {
@@ -72,16 +74,34 @@ body {
 
 .more-margin {
   margin-left: 30px;
+  margin-bottom: 0px;
 }
 
 .no-decoration {
   text-decoration: none;
+  a:hover{
+    text-decoration: none;
+  }
 }
 
 .crud-actions {
-
   text-align: center;
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.image-of-flat {
+  height: 350px;
+  background-image: url('https://media.architecturaldigest.com/photos/5820fcc552e72b09473c2e8c/master/pass/Elspeth-Lynn-London-townhouse-apartment_03.jpg');
+  // background-position: center;
+  // background-size: cover;
+}
+
+.show-card {
+  background-color: #F2F2F2;
+  height: 200px;
+  width: 500px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  border-radius: 2px;
 }

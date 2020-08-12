@@ -1,27 +1,30 @@
-<div class="container">
-  <h1>All our flats</h1>
-  <p>All <%= @flats.count %> flats</p>
+<div class="container" style="width:1250px">
+      <h1>All our flats</h1>
+      <p>All <%= @flats.count %> flats</p>
 
-  <div class="cards">
-    <% @flats.each do |flat| %>
-      <div class="card">
-        <img src="https://media.architecturaldigest.com/photos/5820fcc552e72b09473c2e8c/master/pass/Elspeth-Lynn-London-townhouse-apartment_03.jpg" alt="Photo of flat" class="flat-pic">
-        <div class="flat-info">
-          <h3 class="lil-margin"><%= flat.name %></h3>
-          <p class="lil-margin"><%= flat.address %></p>
-          <div class="flat-price-people lil-margin">
-            <p><i class="fas fa-bed"></i> <%= flat.number_of_guests %></p>
-            <p class="more-margin"><i class="fas fa-pound-sign"> </i><%= flat.price_per_night %></p>
+
+        <% @flats.each do |flat| %>
+          <div class="big-card">
+            <div class="card" style="width: 400px height: 600px">
+              <img src="https://media.architecturaldigest.com/photos/5820fcc552e72b09473c2e8c/master/pass/Elspeth-Lynn-London-townhouse-apartment_03.jpg" alt="Photo of flat" class="flat-pic">
+              <div class="flat-info" style="height: 200px">
+                <h5 class="lil-margin"><%= flat.name %></h5>
+                <p class="lil-margin"><%= flat.address %></p>
+                <div class="flat-price-people lil-margin">
+                  <p><i class="fas fa-bed"></i> <%= flat.number_of_guests %></p>
+                  <p class="more-margin"><i class="fas fa-pound-sign"> </i><%= flat.price_per_night %></p>
+                </div>
+              </div>
+            <div class="crud-actions">
+              <%= link_to "More info", flat_path(flat), class: "no-decoration" %>
+              <%= link_to "Edit", edit_flat_path(flat), class: "no-decoration" %>
+              <%= link_to "Remove", flat_path(flat), method: :delete, class: "no-decoration" %>
+            </div>
           </div>
-        </div>
-        <div class="crud-actions">
-          <%= link_to "More info", flat_path(flat), class: "no-decoration" %>
-          <%= link_to "Edit", edit_flat_path(flat), class: "no-decoration" %>
-          <%= link_to "Remove", flat_path(flat), method: :delete, class: "no-decoration" %>
-        </div>
-      </div>
-    <% end %>
-  </div>
+
+        <% end %>
+
+
 </div>
 
 
